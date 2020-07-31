@@ -40,14 +40,13 @@ public class Main {
 
     System.out.println();
 
-    codiceFiscale.append(NomeCognome.nomeCognome(cognome, false));          // Cognome
-    codiceFiscale.append(NomeCognome.nomeCognome(nome, true));              // Nome
-    codiceFiscale.append(DataNascita.anno(annoNascita));                    // Anno di nascita
-    codiceFiscale.append(DataNascita.mese(meseNascita));                    // Mese di nascita
-    codiceFiscale
-        .append(DataNascita.giorno(giornoNascita, sesso));         // Giorno di nascita e sesso
-    codiceFiscale.append(Comune.comune(comune));                            // Calcolo del comune
-    codiceFiscale.append(CIN.cin(codiceFiscale.toString()));                // Calcolo del CIN
+    codiceFiscale.append(NomeCognome.nomeCognome(cognome, false));    // Cognome
+    codiceFiscale.append(NomeCognome.nomeCognome(nome, true));        // Nome
+    codiceFiscale.append(DataNascita.anno(annoNascita));              // Anno di nascita
+    codiceFiscale.append(DataNascita.mese(meseNascita));              // Mese di nascita
+    codiceFiscale.append(DataNascita.giorno(giornoNascita, sesso));   // Giorno di nascita e sesso
+    codiceFiscale.append(Comune.comune(comune));                      // Calcolo del comune
+    codiceFiscale.append(CIN.cin(codiceFiscale.toString()));          // Calcolo del CIN
 
     // Output
     System.out.println("Il codice fiscale generato risulta: " + codiceFiscale.toString());
